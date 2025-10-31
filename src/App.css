@@ -6,5 +6,5 @@ html, body, #root {
 .app-container {
   min-height: 100%;
   position: relative;
-  padding-bottom: 50px; /* reserve space for footer */
+  padding-bottom: 50px; 
 }

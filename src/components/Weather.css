@@ -1,4 +1,4 @@
-/* ==== Overall Page Layout ==== */
+
 .weathbody {
   min-height: 100vh;
   background: linear-gradient(135deg, #cfe9ff 0%, #eaf6ff 100%);
@@ -8,7 +8,7 @@
   padding: 40px;
 }
 
-/* ==== Main Weather Container ==== */
+
 .weatint {
   background: #ffffff;
   border-radius: 20px;
@@ -26,7 +26,7 @@
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
-/* ==== Title ==== */
+
 .weather-title {
   font-size: 1.6rem;
   color: #0077b6;
@@ -34,7 +34,7 @@
   margin-bottom: 20px;
 }
 
-/* ==== Weather Display (Image + Info) ==== */
+
 .weather-section {
   display: flex;
   align-items: center;
@@ -43,7 +43,7 @@
   margin: 20px 0;
 }
 
-/* ==== Image ==== */
+
 .weather-image {
   width: 120px;
   height: 120px;
@@ -56,7 +56,7 @@
   transform: scale(1.1);
 }
 
-/* ==== Text Info ==== */
+
 .weather-info {
   text-align: left;
 }
@@ -79,7 +79,6 @@
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* ==== Buttons ==== */
 .toggle-btn,
 .refresh-btn {
   border: none;
@@ -108,10 +107,71 @@
   opacity: 0.9;
 }
 
-/* ==== Weather Note ==== */
 .weather-note {
   margin-top: 20px;
   font-size: 0.95rem;
   color: #555;
   line-height: 1.4;
+}
+
+@media (max-width: 600px) {
+  .weatint {
+    padding: 30px 20px;
+  }
+
+  .weather-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .weather-info {
+    text-align: center;
+    width: 100%;
+  }
+
+  .weather-info h3:nth-of-type(2) {
+    font-size: 1.8rem;
+  }
+
+  .weather-image {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 447px) {
+  .weatint {
+    padding: 20px 15px;
+  }
+
+  .weather-section {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .weather-image {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 8px;
+  }
+
+  .weather-info h3:first-of-type {
+    font-size: 1.2rem;
+  }
+
+  .weather-info h3:nth-of-type(2) {
+    font-size: 1.5rem;
+  }
+
+  .toggle-btn,
+  .refresh-btn {
+    padding: 8px 14px;
+    font-size: 0.85rem;
+  }
+
+  .weather-note {
+    font-size: 0.85rem;
+  }
 }

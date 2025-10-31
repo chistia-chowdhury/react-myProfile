@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+
+/* ===== Main Container ===== */
+.midbody {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch; /* stretch children to same height */
+  gap: 20px; /* space between sections */
+  padding: 20px;
+  background-color: #d0ebff; /* light blue background */
+  flex-wrap: wrap; /* allows stacking on small screens */
+}
+
+/* ===== Left Section: Intro ===== */
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  min-width: 280px;
+  background-color: #ffffff;
+  padding: 40px 20px 20px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+  /* make flex grow to match sibling */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+  border: 3px solid #007bff;
+  margin-bottom: 20px;
+}
+
+.intro h2 {
+  margin: 0;
+  font-size: 1.6rem;
+  color: #333;
+}
+
+.intro h4 {
+  margin-top: 6px;
+  font-weight: 500;
+  color: #555;
+}
+
+/* ===== Right Section: About ===== */
+
+.about-section {
+  flex: 2;
+  min-width: 400px;
+  max-width: 800px;
+  text-align: justify;
+  line-height: 1.7;
+  color: #333;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+
+  /* stretch to same height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+/* Section Heading */
+.about-section h2 {
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 900px) {
+  .midbody {
+    flex-direction: column; /* stack vertically */
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-section {
+    max-width: 90%;
+    text-align: left;
+  }
+
+  .intro {
+    max-width: 90%;
+  }
+}
+/* ===== Social Buttons ===== */
+.social-buttons {
+  display: flex;
+  gap: 12px; /* smaller gap between buttons */
+  margin-top: 15px;
+}
+
+.icon-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 4px; /* smaller padding for smaller buttons */
+  border-radius: 6px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.icon-btn:hover {
+  transform: scale(1.2); /* slightly enlarge on hover */
+  background-color: rgba(0,123,255,0.15); /* subtle blue highlight */
+}
+
+.icon-btn img {
+  width: 24px;   /* smaller icons */
+  height: 24px;
+}
+
+.logo-expert {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* center horizontally */
+  gap: 10px;               /* space between logo and text */
+  margin: 15px 0;
+  padding: 5px 10px;
+  background-color: #f0f8ff; /* subtle light-blue background behind logo + text */
+  border-radius: 20px;        /* rounded pill shape */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.da-logo {
+  width: 200px;
+  height: 30px;
+}
+
+.expert-text {
+  font-weight: 600;
+  color: #007bff; /* blue accent */
+  font-size: 1rem;
+}

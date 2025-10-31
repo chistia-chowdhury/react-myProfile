@@ -1,0 +1,117 @@
+/* ==== Overall Page Layout ==== */
+.weathbody {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #cfe9ff 0%, #eaf6ff 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+/* ==== Main Weather Container ==== */
+.weatint {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  padding: 40px 50px;
+  max-width: 520px;
+  width: 100%;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  margin: 20px auto;
+}
+
+.weatint:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* ==== Title ==== */
+.weather-title {
+  font-size: 1.6rem;
+  color: #0077b6;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* ==== Weather Display (Image + Info) ==== */
+.weather-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin: 20px 0;
+}
+
+/* ==== Image ==== */
+.weather-image {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.weather-image:hover {
+  transform: scale(1.1);
+}
+
+/* ==== Text Info ==== */
+.weather-info {
+  text-align: left;
+}
+
+.weather-info h3 {
+  margin: 5px 0;
+  color: #333;
+}
+
+.weather-info h3:first-of-type {
+  font-size: 1.4rem;
+  color: #0077b6;
+  font-weight: 600;
+}
+
+.weather-info h3:nth-of-type(2) {
+  font-size: 2rem;
+  color: #023e8a;
+  font-weight: 700;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ==== Buttons ==== */
+.toggle-btn,
+.refresh-btn {
+  border: none;
+  padding: 10px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  margin: 5px;
+}
+
+.toggle-btn {
+  background: #00b4d8;
+  color: white;
+}
+
+.refresh-btn {
+  background: #fcbf49;
+  color: white;
+}
+
+.toggle-btn:hover,
+.refresh-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* ==== Weather Note ==== */
+.weather-note {
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
+}

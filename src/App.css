@@ -1,0 +1,10 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+.app-container {
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 50px; /* reserve space for footer */
+}

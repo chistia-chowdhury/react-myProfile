@@ -1,73 +1,56 @@
-# React + TypeScript + Vite
+## About The Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a web site that combines my personal information with a live weather dashboard for my home town Dhaka. The portfolio section shares a bit about my background, education, and experience and the weather section shows the current weather in real time using a public weather site.
 
-Currently, two official plugins are available:
+Users can:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+See the current temperature, location, and weather conditions.
 
-## React Compiler
+View weather images that match the temperature (cold, mild, sunny).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Switch between Celsius and Fahrenheit.
 
-## Expanding the ESLint configuration
+The app is built with React and styled with basic css, keeping the interface clean, modern, and responsive.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+This project shows my skills in working with APIs, managing React states and hooks, and creating simple, easy-to-use interfaces that present real-world data in a friendly way.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Getting Started
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Follow the steps below to set up and run the project locally.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Prerequisites
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Before you begin, ensure you have the following installed:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/)
+- A code editor like [VS Code](https://code.visualstudio.com/)
+- Internet connection (for fetching live weather data)
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Built With
+
+- React + TypeScript
+- Vite
+
+### Installation & Usage 
+
+The steps of installation are as follows:
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/chistia-chowdhury/react-myProfile
+   ```
+2. Get into the Directory of the repo
+   ```sh 
+   cd react-myProfile
+   ```
+3. Install NPM packages
+   ```sh
+   npm install
+   ```
+
+4. Run the Application Server on port(default)
+   ```sh
+    npm run dev
+   ```
+
